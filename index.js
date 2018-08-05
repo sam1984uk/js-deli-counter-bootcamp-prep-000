@@ -10,7 +10,7 @@ function nowServing(line){
   
 function currentLine(line){
   var array = [];
-  for (var i = 0; i < line.length; i++){
+  for (let i = 0; i < line.length; i++){
    array.push(` `+[1+i]+`. ${line[i]}`)}
   if (i === 0){return "The line is currently empty."} 
   else {return "The line is currently:"+array}}
